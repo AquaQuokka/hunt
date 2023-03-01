@@ -13,17 +13,17 @@
 
         // Get the appropriate hint for the distance.
         var get_distance_hint = function(distance) {
-            if(distance < 26) {
+            if(distance < 20) {
                 return "*clunk* (You're melting!)";
-            } else if(distance < 126) {
+            } else if(distance < 120) {
                 return "There's something shiny about " + Math.floor(distance) + "m away! (You're burning up!)";
-            } else if(distance < 326) {
+            } else if(distance < 220) {
                 return "*rattle rattle* (It's getting kinda hot in here...)";
-            } else if(distance < 426) {
+            } else if(distance < 320) {
                 return "You can see a shovel sticking out of the ground. (It's nice and warm. How cozy.)";
-            } else if(distance < 526) {
+            } else if(distance < 420) {
                 return "Nothing here... (It's a little chilly...)";
-            } else if(distance < 626) {
+            } else if(distance < 520) {
                 return "The terrain is very flat. (Your teeth are chattering.)";
             } else {
                 return "You like sand. How fortunate. (You can't even feel your body, it's so cold.)";
