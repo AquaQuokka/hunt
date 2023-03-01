@@ -1,0 +1,28 @@
+html {
+    background: black;
+    cursor: auto;
+    zoom: 0.6;
+    font-family: arial;
+}
+
+#heading {
+    color: white;
+    font-size: 1000;
+}
+
+#distance, #remaining, #metres {
+    font-family: arial;
+    font-size: 700;
+}
+
+#distance {
+    color: red;
+}
+
+#remaining {
+    color: yellow;
+}
+
+#metres {
+    color: greenyellow;
+}
