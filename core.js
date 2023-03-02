@@ -41,26 +41,26 @@
             y: get_random_number(height)
         };
 
-        $("#remaining").text(25 - clicks + " " + "clicks" + " " + "remaining")
+        $("#remaining").text(25 - clicks)
         
         $("#map").click(function(event) {
 
-            if(clicks >= 25) {
+            if(clicks >= 24) {
                 alert("Some pirates swooped through and stole the treasure before you...")
                 location.reload();
             }
             clicks++;
 
 
-            $("#remaining").text(25 - clicks + " " + "clicks" + " " + "remaining")
+            $("#remaining").text(25 - clicks)
 
             var distance = get_distance(event, target);
             var distance_hint = get_distance_hint(distance);
 
             $("#distance").text(distance_hint)
-            $("#metres").text(Math.floor(distance) + "m" + " " + "away")
+            $("#metres").text(Math.floor(distance) + "m")
 
-            if (distance <= 10) {
+            if (distance <= 16) {
                 alert("Found the treasure in " + clicks + " clicks!");
                 location.reload();
             }

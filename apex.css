@@ -1,28 +1,66 @@
 html {
     background: black;
     cursor: auto;
-    zoom: 0.6;
-    font-family: arial;
+    zoom: 0.45;
+}
+
+#map {
+    width: 800;
+    height: 800;
 }
 
 #heading {
     color: white;
-    font-size: 1000;
+    font-size: 30px;
+    font-family: arial;
 }
 
 #distance, #remaining, #metres {
     font-family: arial;
-    font-size: 700;
+    font-size: 20px;
 }
 
-#distance {
-    color: red;
+table, table * {
+    width: 700px;
+    height: 70px;
 }
 
-#remaining {
-    color: yellow;
+tg {
+    border-radius: 10px;
+    border-color: transparent;
 }
 
-#metres {
-    color: greenyellow;
+.tg td {
+    border-radius: 10px;
+    border-color: transparent;
+    border-style: solid;
+    font-family:Arial, sans-serif;
+    font-size:20px;
+    overflow:hidden;
+    word-break:normal;
+}
+
+.tg th{
+    border-width:1px;
+    border-radius: 10px;
+    border-color: transparent;
+    font-family:Arial, sans-serif;
+    font-size:20px;
+    font-weight:normal;
+    overflow:hidden;
+    word-break:normal;
+}
+
+.tg .tg-kus3{
+    background-color:black;
+    color:white;
+    text-align:left;
+    vertical-align:top;
+}
+
+.tg .tg-dusx {
+    background-color: black;
+    color:white;
+    text-align:left;
+    vertical-align:top;
 }
