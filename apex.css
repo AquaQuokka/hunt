@@ -1,12 +1,13 @@
 html {
     background: black;
     cursor: auto;
-    zoom: 0.45;
+    zoom: 0.6;
 }
 
 #map {
-    width: 800;
-    height: 800;
+    width: 800px;
+    height: 800px;
+    border-radius: 0px;
 }
 
 #heading {
@@ -20,18 +21,15 @@ html {
     font-size: 20px;
 }
 
-table, table * {
-    width: 700px;
-    height: 70px;
+.tg {
+    border-color: transparent;
+    font-family: Arial, sans-serif;
+    border-spacing: 3px;
+    border-collapse: separate;
 }
 
-tg {
-    border-radius: 10px;
-    border-color: transparent;
-}
 
 .tg td {
-    border-radius: 10px;
     border-color: transparent;
     border-style: solid;
     font-family:Arial, sans-serif;
@@ -42,7 +40,6 @@ tg {
 
 .tg th{
     border-width:1px;
-    border-radius: 10px;
     border-color: transparent;
     font-family:Arial, sans-serif;
     font-size:20px;
@@ -52,15 +49,33 @@ tg {
 }
 
 .tg .tg-kus3{
-    background-color:black;
+    background-color:transparent;
     color:white;
+    border-color: transparent;
     text-align:left;
     vertical-align:top;
 }
 
 .tg .tg-dusx {
-    background-color: black;
+    background-color: transparent;
+    border-color: transparent;
     color:white;
     text-align:left;
     vertical-align:top;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #898989;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #171717;
 }
