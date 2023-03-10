@@ -1,5 +1,7 @@
-    
-        // Get a random number from 0 to "size".
+// Get a random number from 0 to "size".
+
+        $("#retry").text("Click the map to play!")
+
         var get_random_number = function(size) {
             return Math.floor(Math.random() * size);
         };
@@ -41,9 +43,18 @@
             y: get_random_number(height)
         };
 
-        $("#remaining").text(25 - clicks)
+        $("#remaining").text(25 - clicks);
         
+        $("#retry").click(function(event) {
+            if(document.getElementById("retry").textContent !== "Click the map to play!") {
+                location.reload();
+            }
+        });
+
         $("#map").click(function(event) {
+
+            $("#retry").text("Play Again \u21BB");
+
 
             if(clicks >= 24) {
                 alert("Some pirates swooped through and stole the treasure before you...")
@@ -52,13 +63,13 @@
             clicks++;
 
 
-            $("#remaining").text(25 - clicks)
+            $("#remaining").text(25 - clicks);
 
             var distance = get_distance(event, target);
             var distance_hint = get_distance_hint(distance);
 
-            $("#distance").text(distance_hint)
-            $("#metres").text(Math.floor(distance) + "m")
+            $("#distance").text(distance_hint);
+            $("#metres").text(Math.floor(distance) + "m");
 
             if (distance <= 16) {
                 alert("Found the treasure in " + clicks + " clicks!");
